@@ -27,7 +27,7 @@ Route::get('/game', function () {
 })->name('game');
 
 //Route::get('/admin', 'UserController@index')->name('admin');
-Route::resource('admin','UserController');
+Route::resource('admin','UserController')->middleware('auth');
 Route::resource('magic','CardsController');
 Route::resource('characters','CharactersController');
 
