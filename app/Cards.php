@@ -6,4 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Cards extends Model
 {
+    public $timestamps = false;
 }
